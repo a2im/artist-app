@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
               `}
       </Script>
     <ParallaxProvider>
-    <DevNavbar />
+      <MyNavbar />
     <Layout>
       <AnimatePresence mode='wait'>
         <Component
