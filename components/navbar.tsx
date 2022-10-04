@@ -63,13 +63,13 @@ export default function MyNavbar() {
                   </Link>
                 </li>
                 <li className="text-black">
-                  <Link href="/tickets">
-                    <a>Tickets</a>
+                  <Link href="/about">
+                    <a>About Us</a>
                   </Link>
                 </li>
                 <li className="text-black">
-                  <Link href="/submissions">
-                    <a>Submissions</a>
+                  <Link href="/events">
+                    <a>Events</a>
                   </Link>
                 </li>
                 <li className="text-black">
