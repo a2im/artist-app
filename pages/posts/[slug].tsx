@@ -2,19 +2,27 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import Container from '../../components/container'
 import PostBody from '../../components/post-body'
-import MoreStories from '../../components/more-stories'
+import MoreStories from '../../components/recent-news'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
-import Layout from '../../components/layout'
 import PostTitle from '../../components/post-title'
 import Tags from '../../components/tags'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
-import { CMS_NAME } from '../../lib/constants'
+import preview from '../api/preview'
+import { motion } from 'framer-motion'
+import React from 'react'
 
-export default function Post({ post, posts, preview }) {
+
+// adding animation to page transitions
+const content = (isFirstMount) => ({
+  animate: {
+    transition: { staggerChildren: 0.1, delayChildren: isFirstMount ? 2.8 : 0 },
+  },
+});
+
+export default function Post({ post, posts, preview, isFirstMount }) {
   const router = useRouter()
   const morePosts = posts?.edges
 
@@ -23,9 +31,15 @@ export default function Post({ post, posts, preview }) {
   }
 
   return (
-    <Layout preview={preview}>
-      <Container>
-        <Header />
+<motion.section exit={{ opacity: 0 }}>
+  {isFirstMount}
+  <motion.div
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={content(isFirstMount)}
+          className="dspace-y-12">
+    <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
@@ -33,11 +47,11 @@ export default function Post({ post, posts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title}
                 </title>
                 <meta
                   property="og:image"
-                  content={post.featuredImage?.node.sourceUrl}
+                  content={post.featuredImage?.sourceUrl}
                 />
               </Head>
               <PostHeader
@@ -57,8 +71,8 @@ export default function Post({ post, posts, preview }) {
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}
-      </Container>
-    </Layout>
+  </motion.div>
+</motion.section>
   )
 }
 
