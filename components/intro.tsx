@@ -7,7 +7,7 @@ export default function Intro() {
         A2IM Artist
       </h1>
       <div className="flex-col flex w-1/4 items-center">
-      <h4 className="text-center md:text-left text-lg mt-5">
+      <h4 className="text-white text-center md:text-left text-lg mt-5">
       ABOUT A2IM:ARTIST      </h4><p className="text-white tracking-tighter">
 
 In Feb 2020, A2IM launched A2IM:Artist with the goal of helping independent, self-releasing artists, optimize their careers by providing crucial information and networking opportunities. There is no cost to be an A2IM:Artist member thought to qualify you must be a self-releasing, independent artists and the only act on the label.
