@@ -15,7 +15,7 @@ export default function MyNavbar() {
                 <div className="a2imbuttonbox">
                 <Image src="/logos/A2IM-button-black.png" alt="a2im logo button" width={1200} height={1200} layout="responsive" />
                 </div>
-                <h2 className="grow text-2xl text-black font-bold">LIBERA AWARDS</h2>
+                <h2 className="grow text-2xl text-black font-bold">A2IM Artist</h2>
               </div>
               <div className="md:hidden">
                 <button
