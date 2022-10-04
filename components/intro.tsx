@@ -3,12 +3,12 @@ import { CMS_NAME, CMS_URL } from '../lib/constants'
 export default function Intro() {
   return (
     <section className="flex-col md:flex-row flex justify-center gap-10 items-center mt-16 mb-16 md:mb-12 py-32">
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
+      <h1 className="text-white text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         A2IM Artist
       </h1>
       <div className="flex-col flex w-1/4 items-center">
       <h4 className="text-center md:text-left text-lg mt-5">
-      ABOUT A2IM:ARTIST      </h4><p className="tracking-tighter">
+      ABOUT A2IM:ARTIST      </h4><p className="text-white tracking-tighter">
 
 In Feb 2020, A2IM launched A2IM:Artist with the goal of helping independent, self-releasing artists, optimize their careers by providing crucial information and networking opportunities. There is no cost to be an A2IM:Artist member thought to qualify you must be a self-releasing, independent artists and the only act on the label.
 
