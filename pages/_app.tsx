@@ -16,17 +16,14 @@ import ModalContent from "../components/modal-content";
 function MyApp({ Component, pageProps, router }: AppProps) {
   // Create a ref that we add to the element for which we want to detect outside clicks
   const ref = useRef();
-  
   const [modalOpen, setModalOpen] = useState(false)
-
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
+  const [isFirstMount, setIsFirstMount] = React.useState(true);
 
   // Call hook passing in the ref and a function to call on outside click
   useOnClickOutside(ref, () => setModalOpen(false));
 
-  const [isFirstMount, setIsFirstMount] = React.useState(true);
-  
   const content = (isFirstMount) => ({
     animate: {
       transition: { staggerChildren: 0.5, delayChildren: isFirstMount ? 2.8 : 0 },

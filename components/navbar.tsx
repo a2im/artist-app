@@ -81,9 +81,9 @@ export default function MyNavbar() {
             >
               <ul ref={ref} className="items-center justify-center space-x-6 space-y-0 md:flex">
                 <motion.li 
-                                whileHover={{scale: 1.1}}
-                                whileTap={{scale: 0.9}}
-                                className="ml-6 p-1 text-center text-2xl text-white artistborder2nav">
+                  whileHover={{scale: 1.1}}
+                  whileTap={{scale: 0.9}}
+                  className="ml-6 p-1 text-center text-2xl text-white artistborder2nav">
                   <Link href={"/about"}>
                   <a onClick={() => setNavbar(false)}
 
