@@ -8,8 +8,8 @@ import Layout from "../components/layout";
 import '../styles/index.css'
 import Footer from "../components/footer";
 import MyNavbar from '../components/navbar'
-import DevNavbar from '../components/navbar-dev';
-import { Amplify } from 'aws-amplify';
+
+
 
 
 

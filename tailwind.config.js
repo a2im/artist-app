@@ -12,6 +12,11 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        'a2imred': '#FF1827',
+        'a2imblue': '#004bd9',
+        'a2impurple': '#971ea5',
+        'a2imyellow': '#ff8e00',
+        'a2imgreen': '#55e2a6',
       },
       spacing: {
         28: '7rem',

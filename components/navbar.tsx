@@ -1,26 +1,46 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 
 export default function MyNavbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full fixed z-50 bg-amber-50 shadow">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <nav className="Artistnav w-full fixed z-50 shadow">
+        <div className="justify-between mx-auto py-2 md:py-0 lg:max-w-7xl items-center md:flex md:px-4">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                <h2 className="grow text-2xl text-black font-bold">A2IM Artist</h2>
+            <div className="flex items-center justify-between md:py-5 md:block">
+            <Link href={"/"}>
+                <motion.a
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}>
+              <div className="flex justify-center gap-10 grid-cols-2">
+                <motion.div 
+                  whileHover={{scale: 1.1}}
+                  whileTap={{scale: 0.9}}
+                  className="mygrow a2imbuttonbox ml-2 w-10">
+                <Image src="/logos/white-logos/A2IM-button-white.png" alt="a2im logo button" width="100%" height="100%" layout="responsive" />
+                </motion.div>
+                <motion.div 
+                  whileHover={{scale: 1.1}}
+                  whileTap={{scale: 0.9}}
+                  className="mt-1">
+                <h2 className="text-2xl hover:text-artist-darkblue text-white font-bold text-center align-middle -ml-5 tracking-wider">A2IM:ARTIST</h2>
+                </motion.div>
+              </div>
+              </motion.a>
+              </Link>
               <div className="md:hidden">
                 <button
-                  className="p-2 text-black rounded-md outline-none focus:border-black focus:border"
+                  className="pr-2 mr-2 pl-2 p-2 text-white rounded-md outline-none focus:border-white focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-black"
+                      className="w-6 h-6 text-white"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -33,7 +53,7 @@ export default function MyNavbar() {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-black"
+                      className="w-6 h-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -52,36 +72,64 @@ export default function MyNavbar() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              className={`flex-1 justify-self-center mb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-black">
-                  <Link href="/">
-                    <a>Home</a>
-                  </Link>
-                </li>
-                <li className="text-black">
+              <ul className="items-center justify-center space-x-6 space-y-0 md:flex">
+                <motion.li 
+                                whileHover={{scale: 1.1}}
+                                whileTap={{scale: 0.9}}
+                                className="ml-6 p-1 text-center text-2xl text-white Borderswap2nav">
                   <Link href="/about">
-                    <a>About Us</a>
+                  <a
+
+                className="">ABOUT</a>
                   </Link>
-                </li>
-                <li className="text-black">
+                </motion.li>
+                <motion.li 
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.9}}
+                    className="ml-6 p-1 text-center text-2xl text-white Borderswap1nav">
+                  <Link href="/news">
+                  <motion.a
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                className="">NEWS</motion.a>
+                  </Link>
+                </motion.li>
+                <motion.li 
+                  whileHover={{scale: 1.1}}
+                  whileTap={{scale: 0.9}}
+                  className="ml-6 p-1 text-center text-2xl text-white Borderswap3nav">
                   <Link href="/events">
-                    <a>Events</a>
+                    <a className="">EVENTS</a>
                   </Link>
-                </li>
-                <li className="text-black">
+                </motion.li>
+                <motion.li 
+                  whileHover={{scale: 1.1}}
+                  whileTap={{scale: 0.9}}
+                  className="ml-6 p-1 text-center text-2xl text-white Borderswap4nav">
+                  <Link href="/resources">
+                    <a className="">RESOURCES</a>
+                  </Link>
+                </motion.li>
+                <motion.li
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                  className="ml-6 p-1 text-center text-2xl text-white Borderswap1nav">
                   <Link href="/faq">
-                    <a>FAQ</a>
+                    <a className="">FAQ</a>
                   </Link>
-                </li>
-                <li className="text-black">
+                </motion.li>
+                <motion.li 
+                  whileHover={{scale: 1.1}}
+                  whileTap={{scale: 0.9}}
+                  className="ml-6 p-1 text-center text-2xl text-white Borderswap4nav">
                   <Link href="/contact">
-                    <a>Contact US</a>
+                    <a className="">CONTACT</a>
                   </Link>
-                </li>
+                </motion.li>
               </ul>
             </div>
           </div>
