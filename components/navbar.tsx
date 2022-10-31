@@ -8,7 +8,7 @@ export default function MyNavbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="Artistnav w-full fixed z-50 shadow">
+      <nav className="bg-black w-full fixed z-50 shadow">
         <div className="justify-between mx-auto py-2 md:py-0 lg:max-w-7xl items-center md:flex md:px-4">
           <div>
             <div className="flex items-center justify-between md:py-5 md:block">
@@ -26,15 +26,15 @@ export default function MyNavbar() {
                 <motion.div 
                   whileHover={{scale: 1.1}}
                   whileTap={{scale: 0.9}}
-                  className="mt-1">
-                <h2 className="text-2xl hover:text-artist-darkblue text-white font-bold text-center align-middle -ml-5 tracking-wider">A2IM:ARTIST</h2>
+                  className="mt-1 artistborder2nav">
+                <h2 className="text-2xl text-white font-bold text-center align-middle -ml-5 tracking-wider">A2IM:ARTIST</h2>
                 </motion.div>
               </div>
               </motion.a>
               </Link>
               <div className="md:hidden">
                 <button
-                  className="pr-2 mr-2 pl-2 p-2 text-white rounded-md outline-none focus:border-white focus:border"
+                  className="pr-2 mr-2 pl-2 p-2 text-black rounded-md hover:text-white outline-none focus:border-white focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
@@ -53,7 +53,7 @@ export default function MyNavbar() {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-white"
+                      className="w-6 h-6 text-black"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -80,7 +80,7 @@ export default function MyNavbar() {
                 <motion.li 
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
-                                className="ml-6 p-1 text-center text-2xl text-white Borderswap2nav">
+                                className="ml-6 p-1 text-center text-2xl text-white artistborder2nav">
                   <Link href="/about">
                   <a
 
@@ -90,7 +90,7 @@ export default function MyNavbar() {
                 <motion.li 
                     whileHover={{scale: 1.1}}
                     whileTap={{scale: 0.9}}
-                    className="ml-6 p-1 text-center text-2xl text-white Borderswap1nav">
+                    className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
                   <Link href="/news">
                   <motion.a
                 whileHover={{scale: 1.1}}
@@ -101,7 +101,7 @@ export default function MyNavbar() {
                 <motion.li 
                   whileHover={{scale: 1.1}}
                   whileTap={{scale: 0.9}}
-                  className="ml-6 p-1 text-center text-2xl text-white Borderswap3nav">
+                  className="ml-6 p-1 text-center text-2xl text-white artistborder3nav">
                   <Link href="/events">
                     <a className="">EVENTS</a>
                   </Link>
@@ -109,7 +109,7 @@ export default function MyNavbar() {
                 <motion.li 
                   whileHover={{scale: 1.1}}
                   whileTap={{scale: 0.9}}
-                  className="ml-6 p-1 text-center text-2xl text-white Borderswap4nav">
+                  className="ml-6 p-1 text-center text-2xl text-white artistborder4nav">
                   <Link href="/resources">
                     <a className="">RESOURCES</a>
                   </Link>
@@ -117,7 +117,7 @@ export default function MyNavbar() {
                 <motion.li
                 whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
-                  className="ml-6 p-1 text-center text-2xl text-white Borderswap1nav">
+                  className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
                   <Link href="/faq">
                     <a className="">FAQ</a>
                   </Link>
@@ -125,7 +125,7 @@ export default function MyNavbar() {
                 <motion.li 
                   whileHover={{scale: 1.1}}
                   whileTap={{scale: 0.9}}
-                  className="ml-6 p-1 text-center text-2xl text-white Borderswap4nav">
+                  className="ml-6 p-1 text-center text-2xl text-white artistborder4nav">
                   <Link href="/contact">
                     <a className="">CONTACT</a>
                   </Link>

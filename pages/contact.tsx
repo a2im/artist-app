@@ -15,13 +15,13 @@ const content = (isFirstMount) => ({
 export default function Contact({ isFirstMount }) {
   return (
     <main>
-    <div className="max-w-6xl mx-auto">
-    <Header>CONTACT US</Header>
+    <div className="mx-auto text-black bg-a2imgreen">
+    <Header>CONTACT</Header>
     </div>
     <motion.section exit={{ opacity: 0 }}>
     {isFirstMount}
       <Head>
-        <title>Indie Week - Contact Us</title>
+        <title>A2IM:Artist - Contact Us</title>
       </Head>
       <motion.div
           initial="initial"
@@ -34,19 +34,19 @@ export default function Contact({ isFirstMount }) {
             <h3 className="text-center">
               Sponsorship Inquiries?
             </h3>
-            <ArtistButton href="mailto:sales@a2im.org" variant={"iwborder2"}>Click Here</ArtistButton>
+            <ArtistButton href="mailto:sales@a2im.org" variant={"artistborder1"}>Click Here</ArtistButton>
           </div>
           <div className='col-span-1 mx-auto p-4 items-center'>
             <h3 className="text-center">
              A2IM Membership Inquiries?
             </h3>
-            <ArtistButton href="mailto:membership@a2im.org" variant={"iwborder2"}>Click Here</ArtistButton>
+            <ArtistButton href="mailto:membership@a2im.org" variant={"artistborder2"}>Click Here</ArtistButton>
           </div> 
           <div className='col-span-1 mx-auto p-4 items-center'>
             <h3 className="text-center">
             Press Inquiries?
             </h3>
-            <ArtistButton href="mailto:marketing@a2im.org" variant={"iwborder2"}>Click Here</ArtistButton>
+            <ArtistButton href="mailto:marketing@a2im.org" variant={"artistborder3"}>Click Here</ArtistButton>
            </div>
         </div>
       </motion.div>

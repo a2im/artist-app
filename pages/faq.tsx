@@ -23,7 +23,7 @@ export default function Faqpage({ isFirstMount, }) {
   
   return (
     <main>
-    <div className="max-w-6xl">
+    <div className="mx-auto bg-a2imgreen text-black">
     <Header>FAQ</Header>
     </div>
     <motion.section exit={{ opacity: 0 }}>

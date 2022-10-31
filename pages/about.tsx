@@ -15,7 +15,7 @@ const content = (isFirstMount) => ({
 export default function About({ isFirstMount }) {
   return (
     <main>
-    <div className="mx-auto">
+    <div className="mx-auto text-black bg-a2imgreen">
     <Header>ABOUT</Header>
     </div>
     <motion.section exit={{ opacity: 0 }}>

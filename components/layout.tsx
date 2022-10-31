@@ -6,7 +6,7 @@ export default function Layout({ children }) {
 
 return (
   <>
-  <main className="bg-black pt-20 min-h-screen px-4">
+  <main className="bg-black pt-10 min-h-screen">
   <Meta />
     {children}
     </main>

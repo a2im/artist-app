@@ -133,18 +133,18 @@
     }
   h2 {
       font-family: Inter;
-      letter-spacing: 2px;
+      letter-spacing: 0.5px;
       line-height: 1.2em;
       font-size: 3rem;
-      font-weight: 600;
+      font-weight: 800;
       text-transform: uppercase;
   }
   h3 {
     font-family: Inter;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     line-height: 1.2em;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
   }
   h4 {
@@ -154,21 +154,6 @@
   p {
       font-family: Manrope;
     }
-  li {
-      color: white;
-      font-size: 1.0rem;
-      margin: auto;
-      border: 2px solid transparent;
-      border-radius: 50px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  li:hover {
-    border: 2px solid white;
-    border-radius: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   html::-webkit-scrollbar {
     display: none;
   }
@@ -194,9 +179,10 @@
 /* Write you own custom component styles here */
 .artistbuttonsolid {
   border-radius: 30px;
-  background-color: #ffffff;
-  color: black;
+  background-color: #971ea5;
+  color: white;
   font-size: 2rem;
+  font-weight: 600;
   padding-left: 3rem;
   padding-right: 3rem;
   text-transform: uppercase;
@@ -246,44 +232,165 @@
 }
 
 .artistborder {
-  position: relative;
-}
-.artistborder::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50px; 
-  border-style: groove;
-  padding: 6px; 
-  background: white;
-  -webkit-mask: 
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude; 
-}
-.artistborder2 {
-  position: relative;
-}
-.artistborder2::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50px; 
-  border-style: groove;
-  padding: 6px; 
-  background: white;
-  -webkit-mask: 
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude; 
+  background: linear-gradient(-45deg, #004bd9, #7D45BC, #55e2a6);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  background-size: 300% 300%;
+  animation: gradient 7s ease infinite;
 }
 
-.artistnavbar {
-	background: linear-gradient(-90deg, rgba(255, 24, 39, 1), black, rgba(255, 24, 39, 1));
-	background-size: 200% 200%;
-	animation: gradient 13s ease infinite;
+.artistborder {
+  scale: 110%;
+  background: linear-gradient(-90deg, #004bd9, #7D45BC, #55e2a6);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+  color: white;
+}
+
+.artistborder1 {
+  background: linear-gradient(-45deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 10px;
+  padding: 10px;
+  background-size: 300% 300%;
+  animation: gradient 7s ease infinite;
+}
+
+.artistborder1:hover {
+  scale: 110%;
+  background: linear-gradient(-90deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+  color: white;
+}
+
+.artistborder1nav {
+  color: white;
+}
+
+.artistborder1nav:hover {
+  background: linear-gradient(-90deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+}
+
+.artistborder2 {
+  background: linear-gradient(-90deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 10px;
+  padding: 10px;
+  background-size: 300% 300%;
+  animation: gradient 7s ease infinite;
+}
+
+.artistborder2:hover {
+  scale: 110%;
+  background: linear-gradient(-120deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+  color: white;
+}
+
+.artistborder2nav {
+  color: white;
+}
+.artistborder2nav:hover{
+  scale: 110%;
+  background: linear-gradient(-120deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+}
+
+.artistborder3 {
+  background: linear-gradient(45deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 10px;
+  padding: 10px;
+  background-size: 300% 300%;
+  animation: gradient 7s ease infinite;
+}
+
+.artistborder3:hover {
+  scale: 110%;
+  background: linear-gradient(90deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+  color: white;
+}
+.artistborder3nav {
+  color:white;
+}
+
+.artistborder3nav:hover {
+  scale: 110%;
+  background: linear-gradient(90deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+}
+
+.artistborder4 {
+  background: linear-gradient(90deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 10px;
+  padding: 10px;
+  background-size: 300% 300%;
+  animation: gradient 7s ease infinite;
+}
+
+.artistborder4:hover {
+  scale: 110%;
+  background: linear-gradient(145deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+  color: white;
+}
+
+.artistborder4nav {
+  color:white;
+}
+
+.artistborder4nav:hover {
+  scale: 110%;
+  background: linear-gradient(145deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+}
+
+.artistborder5 {
+  background: linear-gradient(90deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 10px;
+  padding: 10px;
+  background-size: 300% 300%;
+  animation: gradient 7s ease infinite;
+  color: white;
+}
+
+.artistborder6 {
+  background: black;
+  border-radius: 10px;
+  padding: 10px;
+  background-size: 300% 300%;
+  animation: gradient 7s ease infinite;
+}
+
+.artistborder6:hover {
+  scale: 110%;
+  background: linear-gradient(145deg, #004bd9, #7D45BC, #55e2a6);
+  border-radius: 25px;
+  background-size: 300% 300%;
+  animation: gradient 3s ease infinite;
+  color: white;
 }
 
 @keyframes gradient {
@@ -297,6 +404,7 @@
 		background-position: 0% 50%;
 	}
 }
+
 
 .wp-block-buttons {
   display: flex;

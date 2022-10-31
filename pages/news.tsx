@@ -20,7 +20,7 @@ export default function Contact({ isFirstMount, allPosts: { edges } }) {
 
   return (
     <main>
-    <div className="max-w-4xl mx-auto">
+    <div className="bg-a2imgreen text-black mx-auto">
     <Header>NEWS</Header>
     </div>
     <motion.section exit={{ opacity: 0 }}>
