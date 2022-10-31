@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { useState, useRef, useEffect  } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import ReactDOM from 'react-dom';
 
 
 export default function MyNavbar() {
@@ -85,19 +84,17 @@ export default function MyNavbar() {
                   whileTap={{scale: 0.9}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder2nav">
                   <Link href={"/about"}>
-                  <a onClick={() => setNavbar(false)}
-
-                className="">ABOUT</a>
+                    <a onClick={() => setNavbar(false)}
+                    className="">ABOUT</a>
                   </Link>
                 </motion.li>
                 <motion.li 
-                    whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0.9}}
-                    className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
+                  whileHover={{scale: 1.1}}
+                  whileTap={{scale: 0.9}}
+                  className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
                   <Link href="/news">
-                  <a onClick={() => setNavbar(false)}
-
-                className="">NEWS</a>
+                    <a onClick={() => setNavbar(false)}
+                    className="">NEWS</a>
                   </Link>
                 </motion.li>
                 <motion.li 
