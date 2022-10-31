@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import PostBody from '../../components/post-body'
 import MoreStories from '../../components/recent-news'
-import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
 import PostTitle from '../../components/post-title'
@@ -39,7 +38,6 @@ export default function Post({ post, posts, preview, isFirstMount }) {
           exit="exit"
           variants={content(isFirstMount)}
           className="dspace-y-12">
-    <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (

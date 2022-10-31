@@ -29,7 +29,7 @@
 }
  .modalinfo {
   position: absolute;
-	background: black;
+	background: rgb(0, 0, 0, 0.8);
 	background-size: 400% 400%;
   border-radius: 50px; 
 	animation: gradient 15s ease infinite;

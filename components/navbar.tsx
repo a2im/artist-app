@@ -1,11 +1,14 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef, useEffect  } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import ReactDOM from 'react-dom';
 
 
 export default function MyNavbar() {
+  const ref = useRef();
   const [navbar, setNavbar] = useState(false);
+  useOnClickOutside(ref, () => setNavbar(false));
   return (
     <div>
       <nav className="bg-black w-full fixed z-50 shadow">
@@ -53,7 +56,7 @@ export default function MyNavbar() {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-black"
+                      className="w-6 h-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -76,13 +79,13 @@ export default function MyNavbar() {
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <ul className="items-center justify-center space-x-6 space-y-0 md:flex">
+              <ul ref={ref} className="items-center justify-center space-x-6 space-y-0 md:flex">
                 <motion.li 
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
                                 className="ml-6 p-1 text-center text-2xl text-white artistborder2nav">
-                  <Link href="/about">
-                  <a
+                  <Link href={"/about"}>
+                  <a onClick={() => setNavbar(false)}
 
                 className="">ABOUT</a>
                   </Link>
@@ -92,10 +95,9 @@ export default function MyNavbar() {
                     whileTap={{scale: 0.9}}
                     className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
                   <Link href="/news">
-                  <motion.a
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                className="">NEWS</motion.a>
+                  <a onClick={() => setNavbar(false)}
+
+                className="">NEWS</a>
                   </Link>
                 </motion.li>
                 <motion.li 
@@ -103,7 +105,8 @@ export default function MyNavbar() {
                   whileTap={{scale: 0.9}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder3nav">
                   <Link href="/events">
-                    <a className="">EVENTS</a>
+                    <a onClick={() => setNavbar(false)} 
+                    className="">EVENTS</a>
                   </Link>
                 </motion.li>
                 <motion.li 
@@ -111,7 +114,8 @@ export default function MyNavbar() {
                   whileTap={{scale: 0.9}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder4nav">
                   <Link href="/resources">
-                    <a className="">RESOURCES</a>
+                    <a onClick={() => setNavbar(false)} 
+                    className="">RESOURCES</a>
                   </Link>
                 </motion.li>
                 <motion.li
@@ -119,7 +123,8 @@ export default function MyNavbar() {
                 whileTap={{scale: 0.9}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
                   <Link href="/faq">
-                    <a className="">FAQ</a>
+                    <a onClick={() => setNavbar(false)}
+                    className="">FAQ</a>
                   </Link>
                 </motion.li>
                 <motion.li 
@@ -127,7 +132,8 @@ export default function MyNavbar() {
                   whileTap={{scale: 0.9}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder4nav">
                   <Link href="/contact">
-                    <a className="">CONTACT</a>
+                    <a onClick={() => setNavbar(false)}
+                    className="">CONTACT</a>
                   </Link>
                 </motion.li>
               </ul>
@@ -136,5 +142,31 @@ export default function MyNavbar() {
         </div>
       </nav>
     </div>
+  );
+}
+function useOnClickOutside(ref, handler) {
+  useEffect(
+    () => {
+      const listener = (event) => {
+        // Do nothing if clicking ref's element or descendent elements
+        if (!ref.current || ref.current.contains(event.target)) {
+          return;
+        }
+        handler(event);
+      };
+      document.addEventListener("mousedown", listener);
+      document.addEventListener("touchstart", listener);
+      return () => {
+        document.removeEventListener("mousedown", listener);
+        document.removeEventListener("touchstart", listener);
+      };
+    },
+    // Add ref and handler to effect dependencies
+    // It's worth noting that because passed in handler is a new ...
+    // ... function on every render that will cause this effect ...
+    // ... callback/cleanup to run every render. It's not a big deal ...
+    // ... but to optimize you can wrap handler in useCallback before ...
+    // ... passing it into this hook.
+    [ref, handler]
   );
 }

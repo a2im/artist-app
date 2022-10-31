@@ -19,7 +19,7 @@ export default function Index({ isFirstMount}) {
   return (
       <motion.section exit={{ opacity: 0 }}>
           <Head>
-              <title>Indie Week - Home</title>
+              <title>A2IM:Artist - Home</title>
           </Head>
           <motion.div
           initial="initial"
