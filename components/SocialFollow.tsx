@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 export function SocialFollowWhite() {
   return (
-    <div className="social-container items-center content-center grid grid-cols-5 gap-8">
+    <div className="social-container items-center content-center grid grid-cols-5 gap-8 my-auto">
     <Link href="https://youtu.be/mV5DSttNOPE"
     className="youtube social" passHref>
       <motion.button 
