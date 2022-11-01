@@ -17,9 +17,9 @@ export function SocialFollowWhite() {
     <Link href="https://youtu.be/mV5DSttNOPE"
     className="youtube social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-white">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-white hover:text-a2imgreen">
     <FontAwesomeIcon icon={faYoutube} size="2x" />
       </a>
       </motion.button>
@@ -27,9 +27,9 @@ export function SocialFollowWhite() {
     <Link href="https://www.facebook.com/independentlabels/"
     className="facebook social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-white">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-white hover:text-a2imgreen">
     <FontAwesomeIcon icon={faFacebook} size="2x" />
     </a>
     </motion.button>
@@ -37,9 +37,9 @@ export function SocialFollowWhite() {
     <Link href="https://twitter.com/LiberaAwards" 
     className="twitter social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-white">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-white hover:text-a2imgreen">
     <FontAwesomeIcon icon={faTwitter} size="2x" />
     </a>
     </motion.button>
@@ -47,9 +47,9 @@ export function SocialFollowWhite() {
     <Link href="https://www.instagram.com/LiberaAwards/"
     className="instagram social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-white">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-white hover:text-a2imgreen">
     <FontAwesomeIcon icon={faInstagram} size="2x" />
     </a>
     </motion.button>
@@ -57,9 +57,9 @@ export function SocialFollowWhite() {
     <Link href="https://www.linkedin.com/company/a2im-american-association-of-independent-music"
     className="linkedin social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a  className="text-white">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-white hover:text-a2imgreen">
     <FontAwesomeIcon icon={faLinkedin} size="2x" />
     </a>
     </motion.button>
@@ -74,9 +74,9 @@ export function SocialFollowBlack() {
     <Link href="https://youtu.be/mV5DSttNOPE"
     className="youtube social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-black">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-black hover:text-a2impurple">
     <FontAwesomeIcon icon={faYoutube} size="2x" />
       </a>
       </motion.button>
@@ -84,9 +84,9 @@ export function SocialFollowBlack() {
     <Link href="https://www.facebook.com/independentlabels/"
     className="facebook social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-black">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-black hover:text-a2impurple">
     <FontAwesomeIcon icon={faFacebook} size="2x" />
     </a>
     </motion.button>
@@ -94,9 +94,9 @@ export function SocialFollowBlack() {
     <Link href="https://twitter.com/LiberaAwards" 
     className="twitter social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-black">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-black hover:text-a2impurple">
     <FontAwesomeIcon icon={faTwitter} size="2x" />
     </a>
     </motion.button>
@@ -104,9 +104,9 @@ export function SocialFollowBlack() {
     <Link href="https://www.instagram.com/LiberaAwards/"
     className="instagram social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a className="text-black">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-black hover:text-a2impurple">
     <FontAwesomeIcon icon={faInstagram} size="2x" />
     </a>
     </motion.button>
@@ -114,9 +114,9 @@ export function SocialFollowBlack() {
     <Link href="https://www.linkedin.com/company/a2im-american-association-of-independent-music"
     className="linkedin social" passHref>
       <motion.button 
-      whileHover={{scale: 1.1}}
-      whileTap={{scale: 0.9}}>
-      <a  className="text-black">
+      whileHover={{scale: 1.04}}
+      whileTap={{scale: 0.95}}>
+      <a className="text-black hover:text-a2impurple">
     <FontAwesomeIcon icon={faLinkedin} size="2x" />
     </a>
     </motion.button>
