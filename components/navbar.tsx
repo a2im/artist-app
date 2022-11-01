@@ -16,17 +16,17 @@ export default function MyNavbar() {
             <div className="flex items-center justify-between md:py-5 md:block">
             <Link href={"/"}>
                 <motion.a
-                whileHover={{scale: 1.1}}
+                whileHover={{scale: 1.04}}
                 whileTap={{scale: 0.9}}>
               <div className="flex justify-center gap-10 grid-cols-2">
                 <motion.div 
-                  whileHover={{scale: 1.1}}
+                  whileHover={{scale: 1.04}}
                   whileTap={{scale: 0.9}}
                   className="mygrow a2imbuttonbox ml-2 w-10">
                 <Image src="/logos/white-logos/A2IM-button-white.png" alt="a2im logo button" width="100%" height="100%" layout="responsive" />
                 </motion.div>
                 <motion.div 
-                  whileHover={{scale: 1.1}}
+                  whileHover={{scale: 1.04}}
                   whileTap={{scale: 0.9}}
                   className="mt-1 artistborder2nav">
                 <h2 className="text-2xl text-white font-bold text-center align-middle -ml-5 tracking-wider">A2IM:ARTIST</h2>
@@ -80,8 +80,8 @@ export default function MyNavbar() {
             >
               <ul ref={ref} className="items-center justify-center space-x-6 space-y-0 md:flex">
                 <motion.li 
-                  whileHover={{scale: 1.1}}
-                  whileTap={{scale: 0.9}}
+                  whileHover={{scale: 1.04}}
+                  whileTap={{scale: 0.95}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder2nav">
                   <Link href={"/about"}>
                     <a onClick={() => setNavbar(false)}
@@ -89,8 +89,8 @@ export default function MyNavbar() {
                   </Link>
                 </motion.li>
                 <motion.li 
-                  whileHover={{scale: 1.1}}
-                  whileTap={{scale: 0.9}}
+                  whileHover={{scale: 1.04}}
+                  whileTap={{scale: 0.95}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
                   <Link href="/news">
                     <a onClick={() => setNavbar(false)}
@@ -98,8 +98,8 @@ export default function MyNavbar() {
                   </Link>
                 </motion.li>
                 <motion.li 
-                  whileHover={{scale: 1.1}}
-                  whileTap={{scale: 0.9}}
+                  whileHover={{scale: 1.04}}
+                  whileTap={{scale: 0.95}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder3nav">
                   <Link href="/events">
                     <a onClick={() => setNavbar(false)} 
@@ -107,8 +107,8 @@ export default function MyNavbar() {
                   </Link>
                 </motion.li>
                 <motion.li 
-                  whileHover={{scale: 1.1}}
-                  whileTap={{scale: 0.9}}
+                  whileHover={{scale: 1.04}}
+                  whileTap={{scale: 0.95}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder4nav">
                   <Link href="/resources">
                     <a onClick={() => setNavbar(false)} 
@@ -116,8 +116,8 @@ export default function MyNavbar() {
                   </Link>
                 </motion.li>
                 <motion.li
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
+                whileHover={{scale: 1.04}}
+                whileTap={{scale: 0.95}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder1nav">
                   <Link href="/faq">
                     <a onClick={() => setNavbar(false)}
@@ -125,8 +125,8 @@ export default function MyNavbar() {
                   </Link>
                 </motion.li>
                 <motion.li 
-                  whileHover={{scale: 1.1}}
-                  whileTap={{scale: 0.9}}
+                  whileHover={{scale: 1.04}}
+                  whileTap={{scale: 0.95}}
                   className="ml-6 p-1 text-center text-2xl text-white artistborder4nav">
                   <Link href="/contact">
                     <a onClick={() => setNavbar(false)}
