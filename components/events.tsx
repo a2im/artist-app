@@ -1,4 +1,4 @@
-import SocialFollow from "./SocialFollow";
+import { SocialFollowBlack } from "./SocialFollow";
 
 export default function Events() {
     return (
@@ -10,7 +10,7 @@ export default function Events() {
                 </h3>
                 <h4 className="text-center">Follow us on social media for the latest updates and register for free to hear first about events.</h4>
               <div className="max-w-lg pt-20 mx-auto">
-              <SocialFollow />
+              <SocialFollowBlack />
               </div>
               </div>
               </div>

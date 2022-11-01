@@ -8,30 +8,119 @@ import {
     faLinkedin
   } from "@fortawesome/free-brands-svg-icons";
   import Link from "next/link";
+import { motion } from "framer-motion";
   
 
-export default function SocialFollow() {
+export function SocialFollowWhite() {
   return (
-    <div className="social-container content-center grid grid-cols-5 gap-8">
+    <div className="social-container items-center content-center grid grid-cols-5 gap-8">
     <Link href="https://youtu.be/mV5DSttNOPE"
-    className="youtube social" passHref><a>
+    className="youtube social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-white">
     <FontAwesomeIcon icon={faYoutube} size="2x" />
-  </a></Link>
-  <Link href="https://www.facebook.com/independentlabels/"
-    className="facebook social" passHref><a>
+      </a>
+      </motion.button>
+    </Link>
+    <Link href="https://www.facebook.com/independentlabels/"
+    className="facebook social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-white">
     <FontAwesomeIcon icon={faFacebook} size="2x" />
-  </a></Link>
-  <Link href="https://twitter.com/LiberaAwards" className="twitter social" passHref>
-    <a><FontAwesomeIcon icon={faTwitter} size="2x" />
-  </a></Link>
-  <Link href="https://www.instagram.com/LiberaAwards/"
+    </a>
+    </motion.button>
+    </Link>
+    <Link href="https://twitter.com/LiberaAwards" 
+    className="twitter social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-white">
+    <FontAwesomeIcon icon={faTwitter} size="2x" />
+    </a>
+    </motion.button>
+    </Link>
+    <Link href="https://www.instagram.com/LiberaAwards/"
     className="instagram social" passHref>
-    <a><FontAwesomeIcon icon={faInstagram} size="2x" />
-  </a></Link>
-  <Link href="https://www.linkedin.com/company/a2im-american-association-of-independent-music"
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-white">
+    <FontAwesomeIcon icon={faInstagram} size="2x" />
+    </a>
+    </motion.button>
+    </Link>
+    <Link href="https://www.linkedin.com/company/a2im-american-association-of-independent-music"
     className="linkedin social" passHref>
-    <a><FontAwesomeIcon icon={faLinkedin} size="2x" />
-  </a></Link>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a  className="text-white">
+    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+    </a>
+    </motion.button>
+    </Link>
+  </div>
+  );
+}
+
+export function SocialFollowBlack() {
+  return (
+    <div className="social-container items-center content-center grid grid-cols-5 gap-8">
+    <Link href="https://youtu.be/mV5DSttNOPE"
+    className="youtube social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-black">
+    <FontAwesomeIcon icon={faYoutube} size="2x" />
+      </a>
+      </motion.button>
+    </Link>
+    <Link href="https://www.facebook.com/independentlabels/"
+    className="facebook social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-black">
+    <FontAwesomeIcon icon={faFacebook} size="2x" />
+    </a>
+    </motion.button>
+    </Link>
+    <Link href="https://twitter.com/LiberaAwards" 
+    className="twitter social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-black">
+    <FontAwesomeIcon icon={faTwitter} size="2x" />
+    </a>
+    </motion.button>
+    </Link>
+    <Link href="https://www.instagram.com/LiberaAwards/"
+    className="instagram social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a className="text-black">
+    <FontAwesomeIcon icon={faInstagram} size="2x" />
+    </a>
+    </motion.button>
+    </Link>
+    <Link href="https://www.linkedin.com/company/a2im-american-association-of-independent-music"
+    className="linkedin social" passHref>
+      <motion.button 
+      whileHover={{scale: 1.1}}
+      whileTap={{scale: 0.9}}>
+      <a  className="text-black">
+    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+    </a>
+    </motion.button>
+    </Link>
   </div>
   );
 }

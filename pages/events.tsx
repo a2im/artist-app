@@ -28,7 +28,7 @@ export default function MyEvents({ isFirstMount }) {
           initial="initial"
           animate="animate"
           variants={content(isFirstMount)}
-          className="px-8 py-20 bg-a2imgreen text-black"
+          className="px-8 py-2"
           >
             <Events />
       </motion.div>

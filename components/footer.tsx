@@ -1,6 +1,6 @@
 import Container from './container'
 import { EXAMPLE_PATH } from '../lib/constants'
-import SocialFollow from "./SocialFollow"
+import { SocialFollowWhite } from "./SocialFollow"
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -14,7 +14,7 @@ export default function Footer() {
               <Image className="grow" src="/logos/white-logos/A2IM-logo-white.png" alt='a2im logo' height={100} width={100} layout={'responsive'} objectFit={'contain'} />
             </a>
             </Link>
-            <SocialFollow />
+            <SocialFollowWhite />
         </div>
       </Container>
     </footer>
