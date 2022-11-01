@@ -1,8 +1,5 @@
-import React, { useRef, useState } from "react";
 import Head from 'next/head'
-import { GetStaticProps } from 'next'
 import { motion } from "framer-motion"
-import { Hidden } from '@mui/material'
 import { About1, About2 } from "../components/about-us";
 import Intro from "../components/intro";
 

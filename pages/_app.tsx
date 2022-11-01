@@ -76,7 +76,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <div ref={ref}
          className="flex fixed modalbuttonbg bottom-5 right-5 md:right-10">
               <motion.button 
-              whileHover={{scale: 1.04}}
               whileTap={{scale: 0.95}}
               className="save-button"
               onClick={() => (modalOpen ? close() : open())}

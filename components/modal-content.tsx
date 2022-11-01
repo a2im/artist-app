@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import ModalPopup from "./modal-popup";
-import Link from "next/link";
+import { ArtistButtonExternal } from "./button";
 
 export default function ModalContent ({handleClose}){
     const dropIn = {
@@ -45,15 +45,7 @@ A2IM:Artists members receive access to curated A2IM:Artist events that are both 
 
  
 <br></br><br></br>
-<Link href="https://membership.a2im.org/artist-application">
-    <motion.button
-    whileHover={{scale: 1.1}}
-    whileTap={{scale: 0.9}}
-    className="artistborder1">
-        click to become an A2IM Artist!
-    </motion.button>
-</Link>
-
+<ArtistButtonExternal href='https://membership.a2im.org/artist-application' variant="artistborder1">Click to join A2IM:Artist</ArtistButtonExternal>
 </p></div>
                 </motion.div>
         </ModalPopup>

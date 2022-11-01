@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Header from '../components/header'
 import { motion } from "framer-motion"
 import Events from '../components/events'
-import Image from 'next/image'
 
 // adding animation to page transitions
 const content = (isFirstMount) => ({

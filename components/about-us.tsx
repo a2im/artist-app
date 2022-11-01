@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import ArtistButton from "./artistbutton";
+import { ArtistButtonInternal } from "./button";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -20,7 +20,7 @@ export function About1 () {
                 <Image className="roundedimage" src="/images/artist8-sq.jpg" alt='a2im artist speaker' width={300} height={300} layout='responsive' objectFit='contain' />
               </div>
             </div>
-            <ArtistButton href='/tickets' variant="artistborder1">LEARN MORE</ArtistButton>
+            <ArtistButtonInternal href='/tickets' variant="artistborder1">LEARN MORE</ArtistButtonInternal>
           </div>
         </div>
         </AnimatePresence>
@@ -47,7 +47,7 @@ EVENTS
             </div>
           </div>
         </div>
-        <ArtistButton href='/tickets' variant="artistborder6">PAST PROGRAMMING</ArtistButton>
+        <ArtistButtonInternal href='/tickets' variant="artistborder6">PAST PROGRAMMING</ArtistButtonInternal>
       </div>
   )
 }

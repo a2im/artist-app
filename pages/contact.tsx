@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Header from '../components/header'
 import { motion } from "framer-motion"
-import ArtistButton from '../components/artistbutton'
+import { ArtistButtonExternal } from '../components/button'
 
 
 // adding animation to page transitions
@@ -34,19 +34,19 @@ export default function Contact({ isFirstMount }) {
             <h3 className="text-center">
               Sponsorship Inquiries?
             </h3>
-            <ArtistButton href="mailto:sales@a2im.org" variant={"artistborder1"}>Click Here</ArtistButton>
+            <ArtistButtonExternal href="mailto:sales@a2im.org" variant={"artistborder1"}>Click Here</ArtistButtonExternal>
           </div>
           <div className='col-span-1 mx-auto p-4 items-center'>
             <h3 className="text-center">
              A2IM Membership Inquiries?
             </h3>
-            <ArtistButton href="mailto:membership@a2im.org" variant={"artistborder2"}>Click Here</ArtistButton>
+            <ArtistButtonExternal href="mailto:membership@a2im.org" variant={"artistborder2"}>Click Here</ArtistButtonExternal>
           </div> 
           <div className='col-span-1 mx-auto p-4 items-center'>
             <h3 className="text-center">
             Press Inquiries?
             </h3>
-            <ArtistButton href="mailto:marketing@a2im.org" variant={"artistborder3"}>Click Here</ArtistButton>
+            <ArtistButtonExternal href="mailto:marketing@a2im.org" variant={"artistborder3"}>Click Here</ArtistButtonExternal>
            </div>
         </div>
       </motion.div>
